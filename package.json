@@ -4,7 +4,8 @@
   "description": "Es un modulo de una aplicacion para una mina",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/",
+    "dev": "nodemon src/"
   },
   "keywords": [
     "Endpoint",
