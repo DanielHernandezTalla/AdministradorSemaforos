@@ -14,7 +14,7 @@ const wsServer = new WebSocketServer({
 
 // Especificamos el puerto en una varibale port, incorporamos cors, express 
 // y la ruta a los archivo estáticos (la carpeta public)
-app.set("port", 3000);
+app.set('port', process.env.PORT || 3000)
 app.use(cors());
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "./public")));
