@@ -18,7 +18,7 @@ function init() {
 // Invoca esta función para conectar con el servidor de WebSocket
 function wsConnect() {
     // Connect to WebSocket server
-    websocket = new WebSocket("ws://localhost:3000");
+    websocket = new WebSocket("ws://administradorsemaforos.herokuapp.com/");
 
     // Asignación de callbacks
     websocket.onopen = function (evt) {
