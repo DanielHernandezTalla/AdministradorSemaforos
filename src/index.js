@@ -32,12 +32,12 @@ function originIsAllowed(origin) {
 // En caso de origen permitido, recibimos el mensaje y lo mandamos
 // de regreso al cliente
 wsServer.on("request", (request) => {
-    if (!originIsAllowed(request.origin)) {
-        // Sólo se aceptan request de origenes permitidos
-        request.reject();
-        console.log((new Date()) + ' Conexión del origen ' + request.origin + ' rechazada.');
-        return;
-    }
+    // if (!originIsAllowed(request.origin)) {
+    //     // Sólo se aceptan request de origenes permitidos
+    //     request.reject();
+    //     console.log((new Date()) + ' Conexión del origen ' + request.origin + ' rechazada.');
+    //     return;
+    // }
     const connection = request.accept(null, request.origin);
     connection.on("message", (message) => {
         console.log("Mensaje recibido: " + message.utf8Data);
