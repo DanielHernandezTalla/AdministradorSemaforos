@@ -22,7 +22,7 @@ app.use(express.static(path.join(__dirname, "./public")));
 function originIsAllowed(origin) {
     // Para evitar cualquier conexión no permitida, validamos que 
     // provenga de el cliente adecuado, en este caso del mismo servidor.
-    if (origin === "http://localhost:3000") {
+    if (origin === "https://administradorsemaforos.herokuapp.com/") {
         return true;
     }
     return false;
