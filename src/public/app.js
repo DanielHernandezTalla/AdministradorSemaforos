@@ -40,7 +40,7 @@ function onOpen(evt) {
     // Habilitamos el botón Enviar
     document.getElementById("enviar").disabled = false;
     // Enviamos el saludo inicial al servidor
-    doSend("Hola");
+    // doSend("Hola");
 }
 
 // Se ejecuta cuando la conexión con el servidor se cierra

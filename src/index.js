@@ -28,6 +28,10 @@ function originIsAllowed(origin) {
     return false;
 }
 
+app.post('/', (req, res) => {
+    res.send(req.body);
+})
+
 // Cuando llega un request por sockets validamos el origen
 // En caso de origen permitido, recibimos el mensaje y lo mandamos
 // de regreso al cliente
